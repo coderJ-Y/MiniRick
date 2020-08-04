@@ -1,0 +1,175 @@
+/* pages/detail/detail.wxss */
+
+/* 背景图 */
+
+.de-bgImg {
+  background-image: url(http://img.llzj.vrdete.com/applet/rick6.jpg);
+  width: 750rpx;
+  height: 100%;
+  background-size: 100%;
+  position: fixed;
+  /* background-position: -650rpx -850rpx; */
+  top: 0;
+  z-index: -1;
+}
+
+/* header */
+
+.header {
+  width: 100%;
+  height: 80rpx;
+  padding: 0 20rpx;
+  margin-top: 20rpx;
+}
+
+.return {
+  background-color: rgb(92, 159, 197);
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 80rpx;
+  float: left;
+}
+
+.return image {
+  width: 80rpx;
+  height: 80rpx;
+}
+
+.home {
+  float: right;
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 80rpx;
+  margin-right: 40rpx;
+}
+
+.home image {
+  width: 80rpx;
+  height: 80rpx;
+}
+
+/* content */
+
+.content {
+  margin-top: 300rpx;
+  border-radius: 60rpx;
+  background-color: white;
+  padding: 40rpx;
+  min-height: 700rpx;
+}
+
+.good-name {
+  font-size: 50rpx;
+  font-weight: bold;
+}
+
+.good-title {
+  font-size: 28rpx;
+  color: #b3afaf;
+  line-height: 48rpx;
+  margin-top: 10rpx;
+}
+
+.price {
+  margin: 30rpx 0;
+  height: 80rpx;
+}
+
+.newprice {
+  font-size: 60rpx;
+}
+
+.newprice text {
+  color: #f67353;
+}
+
+.oldprice {
+  font-size: 30rpx;
+  color: #b3afaf;
+  margin-left: 40rpx;
+  text-decoration: line-through;
+}
+
+.star {
+  float: right;
+  margin-right: 30rpx;
+  line-height: 80rpx
+}
+
+/* 分割线 */
+
+.line {
+  margin-top: 50rpx;
+  background-color: rgb(92, 159, 197);
+  width: 100%;
+  height: 30rpx;
+  font-size: 30rpx;
+  line-height: 30rpx;
+  text-align: center;
+  color: white;
+}
+
+/* 赠品 */
+
+.gift {
+  margin-top: 50rpx;
+  line-height: 60rpx;
+}
+
+.gift .title {
+  font-size: 45rpx;
+  font-weight: bold;
+  margin-bottom: 20rpx;
+}
+
+.gift .left {
+  font-size: 30rpx;
+}
+
+.gift .right {
+  margin-right: 30rpx;
+  float: right;
+  color: #b3afaf;
+  text-decoration: line-through;
+}
+
+/* info */
+
+.info {
+  padding-top: 80rpx;
+  font-size: 28rpx;
+  color: #ca0c16;
+  display: flex;
+  flex-direction: column;
+}
+
+.info>text {
+  margin-bottom: 10rpx;
+}
+
+/* 底部按钮 */
+
+.btns {
+  width: 100%;
+  height: 120rpx;
+  display: flex;
+  margin-top: 28rpx;
+  box-shadow: 0rpx -10rpx 20rpx rgba(0, 0, 0, 0.1);
+  border-radius: 80rpx;
+}
+.addCart, .phone {
+  background-color: rgb(92, 159, 197);
+  border-radius: 80rpx;
+  color: white;
+  display: flex; 
+  justify-content: center;
+  width: 250rpx;
+  height: 80rpx;
+  line-height: 50rpx
+  /* margin-top: 5rpx */
+} 
+.addCart {
+}
+
+.phone {
+}

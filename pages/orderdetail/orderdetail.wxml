@@ -1,0 +1,55 @@
+<!--pages/orderdetail/orderdetail.wxml-->
+<wxs src="../../utils/filter.wxs" module="filter" />
+<view>
+	<view class="header">
+		<view class="order-state">
+			<view class="state-font1">訂單狀態</view>
+			<view class="state-font2">待支付</view>
+		</view>
+		<view class="address">
+			<view class="addresser">收件人：丁光軍 1335288</view>
+			<view class="address-info">
+				<icon class="iconfont iconmap"></icon>
+				韓國RBW娛樂放屁公司
+			</view>
+		</view>
+	</view>
+	<!-- store -->
+	<view class="store">
+		<view class="store-icon">
+			<image src="{{imageSrc}}rick1/d.jpg"></image>
+		</view>
+		<view class="store-info">
+			<view class="store-info-name">RICK AND MORDY官方網店</view>
+			<view class="store-info-time">快遞預期：2020-07-01</view>
+		</view>
+	</view>
+	<view class="goods">
+		<view class="bianhao">訂單編號：202001072059666</view>
+		<view wx:for="{{list}}" wx:key="index">
+			<view class="list-info">
+				<view class="info-icon">
+					<image src="{{item.icon}}"></image>
+				</view>
+				<view class="info-font">
+					<text class="info-font1">{{item.name}}</text>
+					<text class="info-font3">{{item.specification}}</text>
+				</view>
+				<view class="info-right">
+					<view class="info-price">￥{{filter.moneyFilter(item.price)}}</view>
+					<view class="info-num">x{{item.theNum}}</view>
+				</view>
+			</view>
+		</view>
+    <view class="order-price">总价: <text>￥</text>252</view>
+	</view>
+	<view class="order-time">
+    <view class="order-tiem-currency">支付方式：微信支付</view>
+    <view class="order-tiem-currency">下单时间：2020-04-29 14:20</view>
+    <view class="order-tiem-currency">修改时间：2020-04-29 14:20</view>
+  </view>
+  <view class="order-operation">
+    <button>立即支付</button>
+    <button>删除订单</button>
+  </view>
+</view>

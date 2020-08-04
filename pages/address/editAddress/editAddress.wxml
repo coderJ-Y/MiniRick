@@ -1,0 +1,31 @@
+<!--pages/address/editAddress/editAddress.wxml-->
+<van-cell-group>
+  <van-field
+    value="{{ address }}"
+    required
+    clearable
+    label="收件地址"
+    icon="question-o"
+    placeholder="请输入收件地址"
+    bind:click-icon="onClickIcon"
+  />
+
+  <van-field
+    value="{{ info }}"
+    type="password"
+    label="收件人"
+    placeholder="请填写收件人"
+    required
+    border="{{ false }}"
+  />
+
+  <van-field
+    value="{{ tel }}"
+    type="phone"
+    label="电话"
+    placeholder="请输入联系人电话"
+    required
+    border="{{ false }}"
+  />
+
+</van-cell-group>

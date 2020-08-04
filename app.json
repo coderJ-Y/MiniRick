@@ -1,0 +1,54 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/cart/cart",
+    "pages/mine/mine",
+    "pages/detail/detail",
+    "pages/pay/pay",
+    "pages/order/order",
+    "pages/address/address",
+    "pages/address/editAddress/editAddress",
+    "pages/address/addAddress/addAddress",
+    "pages/orderdetail/orderdetail",
+    "pages/classify/classify",
+    "pages/add/add"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "list": [
+      {
+      "pagePath": "pages/index/index",
+      "iconPath": "images/store.png",
+      "selectedIconPath": "images/store2.png"
+      },
+      {
+        "pagePath": "pages/classify/classify",
+        "iconPath": "images/classify.png",
+        "selectedIconPath": "images/classify_active.png"
+        },
+      {
+        "pagePath": "pages/cart/cart",
+        "iconPath": "images/cart.png",
+        "selectedIconPath": "images/cart2.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "iconPath": "images/user.png",
+        "selectedIconPath": "images/user2.png"
+      }]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "usingComponents": {
+    "van-icon": "/assets/vant/icon/index",
+    "van-checkbox": "/assets/vant/checkbox/index",
+    "van-swipe-cell": "/assets/vant/swipe-cell/index",
+    "van-field": "/assets/vant/field/index",
+    "van-picker": "/assets/vant/picker/index"
+  }
+}

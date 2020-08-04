@@ -1,0 +1,65 @@
+<!--pages/mine/mine.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <view wx:if="{{showAuth}}">
+      <button open-type="getUserInfo" bindgetuserinfo="auth" class="login"> 授权登录 </button>
+      <view class="usermotto">
+        <text class="user-motto">HELLO</text>
+      </view>
+    </view>
+    <!-- 用wx-else不能实现 用wx:else -->
+    <block wx:else>
+      <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+      <!-- 积分 -->
+      <view class="integral">
+        <view class="inte-details">
+          <icon class="iconfont iconjifen"></icon>
+          <text>我的积分</text>
+        </view>
+        <view class="inte-records">
+          <icon class="iconfont iconjifen"></icon>
+          <text>我的余额</text>
+        </view>
+      </view>
+      <!-- 我的订单 -->
+      <view class="template">
+        <view class="myOrder" bindtap="gotoOrder">
+          <icon class="iconfont iconicon_sport"></icon>
+          <text>我的订单</text>
+          <icon class="iconfont iconzhixiang-right"></icon>
+        </view>
+        <view class="order-state">
+          <view class="state-font">待付款</view>
+          <view class="state-font">已购买</view>
+          <view class="state-font">配送中</view>
+          <view class="state-font">退款</view>
+        </view>
+      </view>
+      <!-- 列表 -->
+      <view class="template">
+        <view class="myOrder">
+          <icon class="iconfont iconcollection-fill"></icon>
+          <text>我收藏的</text>
+          <icon class="iconfont iconzhixiang-right"></icon>
+        </view>
+        <view class="myOrder">
+          <icon class="iconfont iconjifen"></icon>
+          <text>积分兑换</text>
+          <icon class="iconfont iconzhixiang-right"></icon>
+        </view>
+        <view class="myOrder" bindtap="gotoAddress">
+          <icon class="iconfont iconmap"></icon>
+          <text>我的地址</text>
+          <icon class="iconfont iconzhixiang-right"></icon>
+        </view>
+        <view class="myOrder">
+          <icon class="iconfont icontuichu"></icon>
+          <text>退出登录</text>
+          <icon class="iconfont iconzhixiang-right"></icon>
+        </view>
+      </view>
+    </block>
+  </view>
+
+</view>

@@ -1,0 +1,67 @@
+<!--pages/pay/pay.wxml-->
+<view class="pay">
+	<view class="goodInfo">
+		<view class="imgBox">
+			<image src="{{imageSrc}}rick/mordyImg.jpg"></image>
+		</view>
+		<view class="goodDesc">
+			<view class="good-title">RICK AND MORDY S01</view>
+			<view class="good-price"><text>￥</text>33</view>
+		</view>
+	</view>
+	<!-- 应付 -->
+	<view class="total">
+		<view class="totalNum">
+			应支付：<text class="price">￥33</text>
+		</view>
+	</view>
+	<!-- 选择方式 -->
+	<view class="buyInfo">
+		<picker bindchange="bindPickerChange" value="{{index}}" range="{{typeArr}}">
+			<view class="item noBorder">
+				<view class="left">
+					<icon class="iconfont iconicon_sport"></icon>
+					<text>选择购买方式</text>
+				</view>
+				<view class="right">
+					<text wx:if="buy_mode != ''">{{typeArr[buy_mode]}}</text>
+					<icon class="iconfont iconzhixiang-right"></icon>
+				</view>
+			</view>
+		</picker>
+	</view>
+	<!-- 收件人信息  wx:if="{{buy_mode == 1}}" -->
+	<view class="buyerInfo" wx:if="{{buy_mode == 1}}">
+		<view class="title">请填写收件人信息</view>
+		<view class="infoCon">
+			<view class="item">
+				<view class="left">
+					<icon class="iconfont iconxiugai"></icon><text>姓名：</text>
+				</view>
+				<view class="right"><input type="text" data-type="userName" bindinput="inputFun" placeholder="请输入姓名"></input></view>
+			</view>
+			<view class="item">
+				<view class="left">
+					<icon class="iconfont iconxiugai"></icon><text>手机：</text>
+				</view>
+				<view class="right"><input type="number" data-type="phone" bindinput="inputFun" placeholder="请输入手机号码"></input></view>
+			</view>
+			<!-- 显示全部地址用：mode="region" -->
+			<picker bindchange="bindPickerRegion" mode="region">
+				<view class="item">
+					<view class="left">
+						<icon class="iconfont iconxiugai"></icon><text>选择地区：</text>
+					</view>
+					<view class="right">
+						<text>{{region}}</text>
+						<icon class="iconfont iconzhixiang-bottom"></icon>
+					</view>
+				</view>
+			</picker>
+			<view class="item"><textarea bindinput="inputFun" data-type="address" placeholder="请输入详细地址"></textarea></view>
+		</view>
+	</view>
+	<view class="btns">
+		<button class="buy" bindtap="buyFun"><text>支付</text></button> 
+	</view>
+</view>

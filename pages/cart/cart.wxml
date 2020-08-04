@@ -1,0 +1,59 @@
+<!--pages/cart/cart.wxml-->
+<wxs src="../../utils/filter.wxs" module="filter" />
+
+<view wx:if="{{CartList.length === 0}}" class="empty_cart">
+  <image src="{{imageSrc}}rick/empty_cart.jpg"></image>
+  <text>您的购物车是空的呦！</text>
+</view>
+<!-- -->
+<view wx:else style="padding-bottom: 50px;">
+  <view class="home-bgImg"></view>
+  <view class="shop-name">
+    <text>SHOP</text>
+    <van-icon name="cart-o" class="cart-o" />
+  </view>
+  <view class="shop">
+    <!-- 分割线 -->
+    <!-- <view class="line"></view> -->
+    <!-- 商品列表 
+      left-width="{{ 65 }}"
+      -->
+    <view class="goods" wx:for="{{CartList}}" wx:key="index" >
+      <van-swipe-cell right-width="{{ 65 }}">
+        <view class="goods-check">
+          <van-checkbox data-id="{{item.id}}" checked="{{filter.fn(changeCheck, item.id).indexOf ? true : false}}" bindtap="change" value="{{filter.fn(changeCheck, item.id).indexOf ? true : false}}" checked-color="rgb(92, 159, 197)"></van-checkbox>
+        </view>
+        <!--  bindtap="gotoDetail" -->
+        <view class="goodsinfo">
+          <view class="info-icon">
+            <image src="{{item.icon}}"></image>
+          </view>
+          <view class="info-font">
+            <text class="info-font1">{{item.name}}</text>
+            <text class="info-font2">{{item.title}}</text>
+            <text class="info-font3">{{item.specification}}</text>
+          </view>
+        </view>
+
+        <!-- 超过三件禁购 -->
+        <view class="goods-bot">
+          <view class="goods-price">
+            <text>￥</text>{{filter.moneyFilter(item.price)}}
+          </view>
+          <view class="goods-counter">
+            <icon class="iconfont iconjianhao" bindtap="minusCount" data-item="{{item}}" data-index="{{index}}"></icon>
+            <text class="goods-num">{{item.theNum}}</text>
+            <icon class="iconfont iconjiahao" bindtap="addCount" data-item="{{item}}" data-index="{{index}}"></icon>
+          </view>
+        </view>
+        <view slot="right" class="del" bindtap="onDel" data-id="{{item.id}}">删除</view>
+      </van-swipe-cell>
+    </view>
+  </view>
+  <view class="bottomBar">
+    <van-checkbox class="checkAll" bindtap="chooseAll" checked="{{checkAll}}" value="{{checkAll}}" checked-color="rgb(92, 159, 197)"></van-checkbox>
+    <button class="bottomBtn" bindtap="gotoPay">购买</button>
+    <text class="totalPrice"><text>￥</text>{{filter.moneyFilter(totalPrice)}}</text>
+    <text class="bottom-font">总计：</text>
+  </view>
+</view>

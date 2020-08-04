@@ -1,0 +1,34 @@
+<!--index.wxml-->
+<view>
+  <view class="home-bgImg"></view>
+  <view class="header">
+    <view>
+      <image src="{{imageSrc}}applet/door.png" bindtap="changeRole"></image>
+    </view>
+    <view class="home">RICK</view>
+    <view class="search">
+      <image src="{{imageSrc}}applet/search2.png"></image>
+    </view>
+  </view>
+  <view class="content">
+    <view class="fragment">
+      <!-- <view class="icon">
+        <image src="{{imageSrc}}applet/rick.png"></image>
+      </view> -->
+      <view class="title">CUT</view>
+      <view class="swiper">
+        <swiper indicator-dots autoplay interval="3000" circular style="height:230px">
+          <swiper-item wx:for="{{swiperImg}}" wx:key="index">
+            <navigator url="../detail/detail">
+              <image src="{{item.url}}"></image>
+            </navigator>
+          </swiper-item>
+        </swiper>
+      </view>
+      <view class="title">SHOWS</view>
+      <view class="rick-shows"  wx:for="{{showImg}}" wx:key="index">
+        <image src="{{item.url}}" bindtap="gotoDetail" ></image>
+      </view>
+    </view>
+  </view>
+</view>

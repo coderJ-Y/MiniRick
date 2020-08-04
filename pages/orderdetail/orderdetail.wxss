@@ -1,0 +1,152 @@
+/* pages/orderdetail/orderdetail.wxss */
+page {
+  background: #f7f7f7;
+}
+.header {
+  height: 180rpx;
+  background: #fff;
+  box-shadow: 2px 3px 5px rgb(201, 196, 196);
+  margin: 10rpx;
+  border-radius: 10rpx;
+  padding: 10rpx 30rpx;
+}
+.order-state {
+  height: 60rpx;
+}
+.state-font1 {
+  float: left;
+  line-height: 60rpx;
+}
+.state-font2 {
+  float: right;
+  line-height: 60rpx;
+  color: tomato;
+}
+.address {
+  min-height: 120rpx;
+  color: #b3afaf;
+}
+.addresser {
+  margin-top: 20rpx;
+}
+
+/* store */
+.store {
+  line-height: 60rpx;
+  height: 120rpx;
+  background: #fff;
+  box-shadow: 2px 3px 5px rgb(201, 196, 196);
+  margin: 30rpx 10rpx 20rpx;
+  border-radius: 10rpx;
+  padding: 10rpx 30rpx ;
+}
+.store-icon image {
+  width: 100rpx;
+  height: 100rpx;
+  float: left;
+  border-radius: 10rpx;
+  box-shadow: 2px 3px 5px rgb(201, 196, 196);
+}
+.store-info {
+  margin-left: 30rpx;
+  float: left;
+}
+.store-info-name {
+  font-weight: bold;
+}
+.store-info-time {
+  color: #b3afaf;
+  font-size: 30rpx;
+}
+/* goods */
+.bianhao {
+  margin-bottom: 20rpx;
+  color: #b3afaf;
+}
+.goods {
+  margin: 20rpx 10rpx;
+  height: 650rpx;
+  background: #fff;
+  box-shadow: 2px 3px 5px rgb(201, 196, 196);
+  border-radius: 10rpx;
+  padding: 20rpx 20rpx;
+}
+.list-info {
+  width: calc(100% - 80rpx);
+  height: 140rpx;
+  float: left;
+  margin: 10rpx;
+}
+.info-icon image {
+  width: 140rpx;
+  height: 140rpx;
+  float: left;
+  border-radius: 10rpx;
+  box-shadow: 2px 3px 5px rgb(201, 196, 196);
+}
+.info-font {
+  width: 380rpx;
+  height: 140rpx;
+  float: left;
+  padding: 0 30rpx;
+}
+.info-font1 {
+  display: block;
+  font-size: 32rpx;
+}
+.info-font3 {
+  padding: 8rpx 0;
+  display: block;
+  font-size: 30rpx;
+  color: #b3afaf;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-top: 10rpx;
+}
+.info-right {
+  float: left;
+  width: 90rpx;
+}
+.info-num {
+  margin-top: 15rpx;
+}
+.order-price {
+  float: right;
+  margin-right: 60rpx;
+  font-size: 38rpx;
+}
+.order-price text {
+  color: #f67353;
+}
+
+.order-time{
+  margin: 30rpx 10rpx;
+  padding: 30rpx;
+  min-height: 140rpx;
+  line-height: 140rpx;
+  background: #fff;
+  border-radius: 10rpx;
+  box-shadow: 2px 3px 5px rgb(201, 196, 196);
+}
+.order-tiem-currency{
+  line-height: 60rpx;
+  color: #707070;
+  font-size: 30rpx;
+}
+.order-operation{
+  height: 70rpx;
+  margin: 40rpx 20rpx;
+}
+.order-operation button{
+  width: 200rpx !important;
+  height: 70rpx !important;
+  float: right;
+  font-size: 28rpx;
+  background: rgb(92, 159, 197);
+  border: 2rpx solid #ddd;
+  border-radius: 35rpx;
+  padding: 8px !important;
+  margin-left: 20rpx !important;
+  color: white;
+}

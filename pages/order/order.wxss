@@ -1,0 +1,145 @@
+/* pages/order/order.wxss */
+/* rgb(92, 159, 197)  #f67353*/
+page {
+  background: #f7f7f7;
+}
+
+/* header */
+.header {
+  background: #fff;
+  height: 60rpx;
+  display: flex;
+  box-shadow: 2px 3px 5px rgb(201, 196, 196);
+  border-radius: 10rpx;
+  margin: 20rpx;
+  padding: 30rpx 0;
+  color: rgb(92, 159, 197);
+}
+.state {
+  float: left;
+  width: calc(20% - 2rpx);
+  border-right: 2px solid #b3afaf;
+  text-align: center;
+  line-height: 60rpx;
+}
+.state:last-child {
+  border: none;
+}
+.state.active {
+  color: #707070;
+}
+
+/* content */
+.order {
+  width: 100%;
+  background: #fff;
+  margin: 60rpx 20rpx;
+  padding: 30rpx 20rpx;
+  height: 900rpx;
+  border-radius: 10rpx;
+  box-shadow: 2px 3px 5px rgb(201, 196, 196);
+}
+.order-store {
+  /* background: red; */
+  width: 100%;
+  height: 130rpx;
+  border-bottom: 1px solid #b3afaf;
+}
+.order-icon image {
+  width: 100rpx;
+  height: 100rpx;
+  float: left;
+  border-radius: 10rpx;
+  box-shadow: 2px 3px 5px rgb(201, 196, 196);
+}
+.store-info {
+  /* background: red; */
+  width: 80%;
+  float: left;
+  margin-left: 10rpx;
+}
+.info-name,.order-state {
+  font-size: 30rpx;
+  float: left;
+  padding: 0 30rpx;
+}
+.order-state {
+  font-weight: bold;
+}
+.info-bottom {
+  width: 80%;
+  float: left;
+  margin-left: 30rpx;
+  margin-top: 20rpx;
+  font-size: 30rpx;
+  color: #f67353;
+}
+
+.goods {
+  margin-top: 40rpx;
+  height: 140rpx;
+}
+.list-info {
+  width: calc(100% - 80rpx);
+  height: 140rpx;
+  float: left;
+}
+.info-icon image {
+  width: 140rpx;
+  height: 140rpx;
+  float: left;
+  border-radius: 10rpx;
+  box-shadow: 2px 3px 5px rgb(201, 196, 196);
+}
+.info-font {
+  width: 380rpx;
+  height: 140rpx;
+  float: left;
+  padding: 0 30rpx;
+}
+.info-font1 {
+  display: block;
+  font-size: 32rpx;
+}
+.info-font3 {
+  padding: 8rpx 0;
+  display: block;
+  font-size: 30rpx;
+  color: #b3afaf;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-top: 10rpx;
+}
+.info-right {
+  float: left;
+  width: 90rpx;
+}
+.info-num {
+  margin-top: 15rpx;
+}
+
+.order-price {
+  float: right;
+  margin-right: 100rpx;
+  font-size: 38rpx;
+}
+.order-price text {
+  color: #f67353;
+}
+.order-button {
+  margin-top: 120rpx;
+  height: 70rpx;
+  margin-right: 50rpx;
+}
+.order-button button {
+  width: 200rpx !important;
+  height: 70rpx !important;
+  float: right;
+  font-size: 28rpx;
+  padding: 8px !important;
+  margin-right: 20rpx !important;
+  background: rgb(92, 159, 197);
+  color: white;
+  border-radius: 50rpx;
+}

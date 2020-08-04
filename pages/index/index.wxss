@@ -1,0 +1,110 @@
+/**index.wxss**/
+.home-bgImg {
+  background-image: url(http://img.llzj.vrdete.com/applet/rick2.jpg);
+  width: 750rpx;
+  height: 850rpx;
+  background-size: 100%;
+  position: fixed;
+  /* background-position: -650rpx -850rpx; */
+  top: 0;
+  z-index: -1;
+}
+
+/* header */
+
+.header {
+  margin-top: 200rpx;
+  height: 100rpx;
+  padding: 0 40rpx;
+}
+
+.header image {
+  width: 60rpx;
+  height: 60rpx;
+  float: left;
+  margin: 18rpx 24rpx 24rpx 0;
+}
+
+.home {
+  font-size: 70rpx;
+  color: rgb(92, 159, 197);
+  float: left;
+}
+
+.header .home:active {
+  font-size: 70rpx;
+  color: rgb(92, 159, 197);
+  float: left;
+  /* animation:myfirst 5s; */
+  transition: width 1.5s, height 1.5s, transform 1.5s;
+}
+
+.home:active {
+  transform: scale(2, 2);
+}
+
+.header .search {
+  width: 60rpx;
+  height: 60rpx;
+  background: rgb(114, 179, 177);
+  border-radius: 16rpx;
+  float: right;
+}
+
+.header .search image {
+  margin: 10rpx;
+  width: 40rpx;
+  height: 40rpx;
+}
+
+/* content */
+
+.content {
+  width: 100%;
+  border-radius: 60rpx;
+  margin-top: 380rpx;
+  background-color: rgb(114, 179, 177);
+  height: 620rpx;
+}
+.fragment .title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 2.5em;
+  flex: 0 0 100%;
+  letter-spacing: 0.25em;
+  margin: 0;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.fragment .title:active {
+  color: white
+}
+
+.fragment .icon image {
+  padding: 0 50rpx
+}
+.swiper {
+  /* height: 230px; */
+  width: 100%
+}
+
+.swiper image {
+  width: 100%;
+  /* height: 230px; */
+}
+
+/* show */
+.rick-shows {
+  /* justify-content: center; */
+  /* display: flex; */
+  /* padding: 10rpx; */
+  margin-top: 30rpx
+}
+.rick-shows image {
+   margin: 15rpx;
+   margin-bottom: 40rpx;
+   width: 46%;
+   height: 450rpx;
+   float: left
+}

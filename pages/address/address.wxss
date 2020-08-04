@@ -1,0 +1,53 @@
+/* pages/address/address.wxss */
+page {
+  background: #f7f7f7;
+}
+/* rgb(92, 159, 197) */
+.template {
+  background: #fff;
+  min-height: 100rpx;
+  border-radius: 10rpx;
+  margin: 20rpx;
+  padding: 20rpx;
+  box-shadow: 2px 3px 5px rgb(201, 196, 196);
+}
+.address {
+  font-size: 33rpx;
+  margin-bottom: 10rpx;
+}
+.info {
+  font-size: 30rpx;
+  color: #b3afaf;
+  float: left;
+  margin-right: 20rpx;
+}
+.tel {
+  font-size: 30rpx;
+  color: #b3afaf;
+  float: left;
+}
+.iconxiugai {
+  font-size: 34rpx;
+  color: rgb(92, 159, 197) ;
+  float: right;
+  margin-right: 30rpx;
+}
+
+/* 新增地址 */
+.addAddress {
+  background: rgb(92, 159, 197);
+  color: white;
+  border-radius: 40rpx;
+}
+.btns {
+  background: #fff;
+  width: 100%;
+  height: 120rpx;
+  left: 0;
+  bottom: 0;
+  position: absolute;
+  display: flex;
+  box-shadow: 0rpx -10rpx 20rpx rgba(0, 0, 0, 0.1);
+  justify-content: center;
+  align-items: center;
+}

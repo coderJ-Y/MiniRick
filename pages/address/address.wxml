@@ -1,0 +1,10 @@
+<!--pages/address/address.wxml-->
+<view>
+	<view class="template" wx:for="{{addressList}}" wx:key="index">
+		<view class="address">{{item.address}}</view>
+		<view class="info">{{item.info}}</view>
+		<view class="tel">{{item.tel}}</view>
+		<icon class="iconfont iconxiugai" bindtap="goEditAddress"></icon>
+	</view>
+	<view class="btns"><button class="addAddress" bindtap="goaddAddress">新增地址</button> </view>
+</view>

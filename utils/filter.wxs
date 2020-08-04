@@ -1,0 +1,19 @@
+// filter过滤器
+function moneyFilter (price) {
+  price = (price / 100).toFixed(2);
+  return price;
+}
+// 
+function fn(arr,arg) {
+  var result = {
+    indexOf: false,
+    toString: ''
+  }
+  result.indexOf = arr.indexOf(arg) > -1;
+  result.toString = arr.join(",");
+  return result;
+}
+module.exports = {
+  moneyFilter: moneyFilter,
+  fn: fn
+}

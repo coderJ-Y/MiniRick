@@ -1,0 +1,225 @@
+/* pages/cart/cart.wxss */
+
+/* 购物车为空 */
+
+.empty_cart {
+  height: 350rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.empty_cart image {
+  width: 230rpx;
+  height: 230rpx;
+  border-radius: 230rpx;
+}
+
+.empty_cart text {
+  font-size: 28rpx;
+  color: #999;
+}
+
+/* .home-bgImg {
+  background-image: url(http://img.llzj.vrdete.com/applet/rick2.jpg);
+  width: 750rpx;
+  height: 1600rpx;
+  background-size: 100%;
+  position: fixed;
+  top: 0;
+  z-index: -1;
+} */
+/* page #f67353 */
+
+page {
+  background-color: #f7f7f7;
+}
+
+/* 购物车不为空 */
+
+.shop {
+  margin: 20rpx 20rpx 150rpx;
+  border-radius: 15rpx;
+  box-shadow: 2px 3px 5px rgb(201, 196, 196);
+  background-color: #fff;
+  padding: 20rpx 0;
+}
+.shop-name {
+  margin: 10rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  padding: 40rpx;
+  color: rgba(245, 98, 80, 0.8)
+}
+
+.shop-name text {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 3.0em;
+  flex: 0 0 100%;
+  letter-spacing: 0.15em;
+  margin: 0;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.cart-o {
+  font-size: 60rpx;
+  float: right;
+}
+/* line */
+
+/* .line {
+  margin-top: 10rpx;
+  background-color: rgb(92, 159, 197);
+  width: 100%;
+  height: 5rpx;
+} */
+/* goods */
+
+.goods {
+  margin: 40rpx 0;
+  height: 200rpx;
+}
+.goods:last-child {
+  margin-bottom: 80rpx
+}
+.goods-check {
+  width: 40rpx;
+  height: 40rpx;
+  float: left;
+  padding: 40rpx 20rpx;
+}
+
+.goodsinfo {
+  width: calc(100% - 80rpx);
+  height: 140rpx;
+  float: left;
+}
+
+.info-icon image {
+  width: 140rpx;
+  height: 140rpx;
+  float: left;
+  border-radius: 10rpx;
+  box-shadow: 2px 3px 5px rgb(201, 196, 196);
+}
+
+.info-font {
+  width: calc(100% - 220rpx);
+  height: 140rpx;
+  float: left;
+  padding: 0 30rpx;
+}
+.info-font1 {
+  display: block;
+  font-size: 32rpx;
+}
+.info-font2 {
+  display: block;
+  font-size: 30rpx;
+  color: #b3afaf;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap
+}
+.info-font3 {
+  padding: 8rpx 0;
+  display: block;
+  font-size: 30rpx;
+  color: #b3afaf;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap
+}
+
+.goods-bot {
+  clear: both;
+  margin-left: 240rpx;
+  height: 60rpx
+}
+.goods-price {
+  font-size: 35rpx;
+  line-height: 60rpx;
+  float: left
+}
+.goods-price text {
+  color: #f67353
+}
+.goods-counter {
+  float: right;
+  margin-right: 80rpx;
+}
+.iconjianhao,.iconjiahao {
+  font-size: 40rpx;
+  color: #333;
+  float: left
+}
+.iconjiahao {
+  margin-left: 10rpx
+}
+.iconjianhao {
+  margin-right: 10rpx
+}
+.goods-num {
+  line-height: 45rpx;
+  text-align: center;
+  width: 50rpx;
+  float: left;
+  font-size: 30rpx
+}
+.del {
+  display: flex;
+  background: tomato;
+  color: #fff;
+  font-size: 13px;
+  width: 65px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* bottomBar */
+.bottomBar {
+  /* background: #fff; */
+  position: fixed;
+  bottom: 0;
+  z-index: 1;
+  width: calc(100% - 80rpx);
+  height: 120rpx;
+  line-height: 120rpx;
+  background: #fff;
+  padding: 0 40rpx;
+  border-top: 1px solid #eee;
+}
+.checkAll {
+  float: left;
+  margin: 40rpx 10rpx
+}
+/* rgb(92, 159, 197) */
+.bottomBtn {
+  float: right;
+  margin-top: 20rpx;
+  width: 220rpx !important;
+  height: 80rpx;
+  line-height: 50rpx;
+  padding: 15rpx 40rpx;
+  color: #fff;
+  background: rgb(92, 159, 197);
+  border-radius: 60rpx
+}
+.bottom-font {
+  float: right;
+  margin-right: 20rpx
+}
+.totalPrice {
+  font-size: 40rpx;
+  float: right;
+  margin-right: 20rpx
+}
+.totalPrice text {
+  color: tomato;
+  font-size: 40rpx
+}

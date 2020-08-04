@@ -1,0 +1,94 @@
+/* pages/classify/classify.wxss */
+/* background-position: -650rpx -850rpx; */
+/* .home-bgImg {
+  background-image: url(http://img.llzj.vrdete.com/applet/rick2.jpg);
+  margin-top: 70rpx;
+  width: 750rpx;
+  height: 1200rpx;
+  background-size: 100%;
+  position: fixed;
+  top: 0;
+  z-index: -1;
+} */
+page {
+  background: #f7f7f7;
+}
+
+.classify {
+  background: #fff;
+  height: 350rpx;
+  padding: 10rpx;
+}
+.title {
+  margin-left: 220rpx;
+  margin-top: 20rpx;
+  background-color: rgb(92, 159, 197);
+  border-radius: 50rpx;
+  box-shadow: 2px 3px 5px rgb(201, 196, 196);
+  width: 40%;
+  height: 100rpx;
+  line-height: 100rpx;
+  font-size: 40rpx;
+  text-align: center;
+  color: white;
+  margin-bottom: 20rpx;
+}
+.item { 
+  display: flex;
+  width: calc(30% - 10rpx);
+  height: 60rpx;
+  line-height: 60rpx;
+  padding: 5rpx;
+  float: left;
+  margin: 20rpx 10rpx;
+  text-align: center;
+  justify-content: center;
+  border-radius: 10rpx;
+  color: white;
+  background: rgb(92, 159, 197);
+
+}
+.item.active {
+  background: #f0f0f0;
+  color: #707070
+}  
+
+/* 没有数据 */
+.nodata {
+  background: #fff;
+  height: 950rpx;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin-top: 20rpx;
+}
+/* .nodata image {
+  width: 230rpx;
+  height: 230rpx;
+  margin-bottom: 20rpx;
+  border-radius: 230rpx;
+} */
+.nodata text {
+  font-size: 35rpx;
+  color: #999;
+}
+
+/* 添加按钮 */
+.add-icon {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  background: rgb(92, 159, 197);
+  box-shadow:0rpx 0rpx 30rpx rgb(92, 159, 197);
+  position: fixed;
+  right: 10rpx;
+  bottom: 100rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.iconjiahao {
+  font-size: 50rpx;
+  color: #fff;
+}

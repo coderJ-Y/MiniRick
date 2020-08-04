@@ -1,0 +1,39 @@
+<!--pages/order/order.wxml-->
+<wxs src="../../utils/filter.wxs" module="filter" />
+<!-- active和{{default == item.name ? 'active':''}} 中间不要有空格 否则active失效 -->
+<view>
+	<view class="header">
+		<view wx:for="{{stateList}}" class="state active{{default == item.name ? 'active':''}}" bindtap="selected" data-name="{{item.name}}" wx:key="index">{{item.name}}</view>
+	</view>
+	<view class="order">
+		<view class="order-store"  bindtap="goOrderDetail">
+			<view class="order-icon">
+				<image src="{{imageSrc}}rick1/d.jpg"></image>
+			</view>
+			<view class="store-info">
+				<view class="info-top">
+					<view class="info-name">RICK AND MOEDY官方网店</view>
+					<view class="order-state">待支付</view>
+				</view>
+				<view class="info-bottom">订单关闭时间：2020-7-1 12:00:00</view>
+			</view>
+		</view>
+		<view class="goods" wx:for="{{list}}">
+			<view class="list-info">
+				<view class="info-icon">
+					<image src="{{item.icon}}"></image>
+				</view>
+				<view class="info-font">
+					<text class="info-font1">{{item.name}}</text>
+					<text class="info-font3">{{item.specification}}</text>
+				</view>
+				<view class="info-right">
+					<view class="info-price">￥{{filter.moneyFilter(item.price)}}</view>
+					<view class="info-num">x{{item.theNum}}</view>
+				</view>
+			</view>
+		</view>
+		<view class="order-price">总价: <text>￥</text>252</view>
+		<view class="order-button"><button bindtap="buyFun">立即支付</button><button>删除订单</button></view>
+	</view>
+</view>

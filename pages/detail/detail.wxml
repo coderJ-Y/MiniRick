@@ -1,0 +1,64 @@
+<!--pages/detail/detail.wxml-->
+<view>
+  <view class="header">
+    <view class="return" bindtap="goPrePage">
+      <image src="{{imageSrc}}applet/arrow_left.png"></image>
+    </view>
+    <view class="home" bindtap="goHome">
+      <image src="{{imageSrc}}applet/door.png" ></image>
+    </view>
+  </view>
+
+  <!-- 背景图 -->
+  <view class="de-bgImg"></view>
+
+  <!-- 内容 -->
+  <view class="content">
+    <view class="good-name">RICK AND MORDT S01</view>
+    <view class="good-title">本动画是由创作人Dan Harmon和Justin Roiland开发的动画连续剧。每集一个独立小故事，精妙无比的剧情安排，天马行空的想象力，突破天际的脑洞，是本剧最大的特点。</view>
+    <view class="price">
+      <text class="newprice"><text>￥</text>33</text>
+      <text class="oldprice"><text>￥</text>53</text>
+      <view class="star">
+        <van-icon name="star-o" size="50rpx" bindtap="star" />
+      </view>
+    </view>
+    <view class="line">--- IAM LINE ---</view>
+    <view class="gift">
+      <view class="title">赠 品</view>
+      <view class="gift1">
+        <text class="left">Rick等比大小公仔</text>
+        <text class="right"><text>￥</text>100</text>
+      </view>
+      <view class="gift2">
+        <text class="left">Mordy等比大小公仔</text>
+        <text class="right"><text>￥</text>50</text>
+      </view>
+      <view class="gift3">
+        <text class="left">Jerry等比大小公仔</text>
+        <text class="right"><text>￥</text>1</text>
+      </view>
+      <view class="gift3">
+        <text class="left">Beth等比大小公仔</text>
+        <text class="right"><text>￥</text>1</text>
+      </view>
+      <view class="gift4">
+        <text class="left">Summer等比大小公仔</text>
+        <text class="right"><text>￥</text>1</text>
+      </view>
+      <view class="gift5">
+        <text class="left">JERRY等比大小公仔</text>
+        <text class="right"><text>￥</text>1</text>
+      </view>
+    </view>
+    <view class="info">
+      <text>*温馨提示</text>
+      <text>本平台享有RICK AND MORDT官方授权，侵权必究！</text>
+    </view>
+    
+  </view>
+  <view class="btns">
+      <button class="phone" bindtap="callPhone">联系官方</button>
+      <button class="addCart" bindtap="gotoCart">加入购物车</button>
+    </view>
+</view>

@@ -1,0 +1,19 @@
+<!--pages/classify/classify.wxml-->
+<!-- 背景图 -->
+<view class="home-bgImg"></view>
+<!-- 分类 -->
+<view class="classify">
+	<view class="title"> 精彩分类 </view>
+	<view class="item active{{default == item.name ? 'active':''}}" wx:for="{{classList}}" wx:key="index" bindtap="selected" data-name="{{item.name}}">{{item.name}}</view>
+</view>
+<!-- 没有数据 -->
+<view class="nodata" wx:if="{{goodList.length === 0}}">
+	<!-- <image src="{{imageSrc}}rick/empty_cart.jpg"></image> -->
+	<text>没有更多商品了！</text>
+</view>
+<!-- 最新发布 -->
+<view class="goodMain" wx:if="{{goodList.length > 0}}"></view>
+<!-- 发布按钮 -->
+<view class="add-icon" bindtap="goAddGood">
+	<icon class="iconfont iconjiahao" mode="aspectFill"></icon>
+</view>
